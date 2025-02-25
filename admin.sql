@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4deb2+deb11u1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Feb 25, 2025 at 10:04 AM
--- Server version: 10.5.26-MariaDB-0+deb11u2
--- PHP Version: 7.4.33
+-- Host: 127.0.0.1
+-- Generation Time: Feb 25, 2025 at 05:55 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `shop4634`
+-- Database: `shop`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `a_id` int(6) NOT NULL,
   `a_name` varchar(200) NOT NULL,
-  `a_user` varchar(200) NOT NULL,
+  `a_usr` varchar(200) NOT NULL,
   `a_pwd` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -38,9 +38,9 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`a_id`, `a_name`, `a_user`, `a_pwd`) VALUES
-(1, 'สรวิชญ์ ปัญญา', 'admin', '1234'),
-(2, 'สรวุชญ์ ', 'admin2', '4321');
+INSERT INTO `admin` (`a_id`, `a_name`, `a_usr`, `a_pwd`) VALUES
+(1, 'สรวิชญ์ ปัญญา', 'admin', '$2y$10$yRwQDeiAiy0k3BPnCEUljuIIrNOubhi6GC5GNJSKPtzmf1rWX6y6W'),
+(2, 'สรวุชญ์ ', 'admin2', '$2y$10$f1ZXx8TYJx9pxIdPnN3LIOBM/SkLsuYq85fsg9TyKIvNH8fKuc.16');
 
 --
 -- Indexes for dumped tables
